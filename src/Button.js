@@ -1,6 +1,7 @@
-export const Button = (props) => {
-  console.log(props);
-  return <button style={{ background: props.color }}>{props.title} </button>;
+// export const Button = (props) => {
+export const Button = ({ title, color }) => {
+  // console.log(props);
+  return <button style={{ background: color }}>{title} </button>;
 };
 // export const Login = () => {
 //   return <button> Login </button>;
