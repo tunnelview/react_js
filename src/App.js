@@ -3,7 +3,7 @@ import "./App.css";
 import Title from "./Title";
 import Section from "./Section";
 import React from "react";
-import { Button } from "./Button";
+import { Button, Login } from "./Button";
 
 const App = () => {
   return (
@@ -11,6 +11,7 @@ const App = () => {
       <Title />
       <Section />
       <Button />
+      <Login />
 
       <p>lorem10</p>
     </div>
