@@ -1,19 +1,18 @@
 // import logo from './logo.svg'; delete this line.
 import "./App.css";
-import Title from "./Title";
+import PageTitle from "./Title";
 import Section from "./Section";
 import React from "react";
-import { Button, Login } from "./Button";
+import { Button } from "./Button";
 
 const App = () => {
   return (
     <div>
-      <Title />
+      <PageTitle />
       <Section />
-      <Button />
-      <Login />
-
-      <p>lorem10</p>
+      <Button title="Sign up" color="red" />
+      <Button title="Login Up" color="blue" />
+      <Button title="Logout" color="green" />
     </div>
   );
 };

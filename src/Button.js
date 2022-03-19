@@ -1,8 +1,7 @@
-import React from "react";
-
-export const Button = () => {
-  return <button> Sign UP</button>;
+export const Button = (props) => {
+  console.log(props);
+  return <button style={{ background: props.color }}>{props.title} </button>;
 };
-export const Login = () => {
-  return <button> Login </button>;
-};
+// export const Login = () => {
+//   return <button> Login </button>;
+// };
