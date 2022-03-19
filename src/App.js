@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg'; delete this line.
+import "./App.css";
+import Title from "./Title";
+import Section from "./Section";
+import React from "react";
+import { Button } from "./Button";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Title />
+      <Section />
+      <Button />
+
+      <p>lorem10</p>
     </div>
   );
-}
+};
+
+// class App extends React.Component {
+//   render() {
+//     // const App = () => {
+//     return (
+//       <div>
+//         <Title />
+//         <Section />
+
+//         <p>lorem10</p>
+//       </div>
+//     );
+//   }
+// }
 
 export default App;
