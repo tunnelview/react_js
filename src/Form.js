@@ -11,10 +11,15 @@ export const Form = () => {
     setStr(value);
   };
 
+  const handleOnSubmit = (e) => {
+    e.preventDefault(); // this command will stop all the default behavior of the form
+    console.log(e);
+  };
+
   return (
     <p>
       <p>
-        <form action="">
+        <form action="" onSubmit={handleOnSubmit}>
           <input type="text" name="search" onChange={handleChange} />
           <input type="submit" value="Submit" />
         </form>
