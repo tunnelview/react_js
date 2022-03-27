@@ -15,7 +15,7 @@ export const Form = () => {
     <p>
       <p>
         <form action="">
-          <input type="text" name="search" onChange={} />
+          <input type="text" name="search" onChange={handleChange} />
           <input type="submit" value="Submit" />
         </form>
       </p>
